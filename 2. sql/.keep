@@ -1,0 +1,8 @@
+Placeholder for SQL projects and queries.
+
+This folder will include:
+- Sample databases
+- Query practice (SELECT, JOIN, GROUP BY, etc.)
+- Case studies on database analytics
+
+This file ensures Git tracks this directory even if it's empty.

@@ -1,0 +1,8 @@
+Placeholder for Python projects and scripts related to data analytics.
+
+This folder will include:
+- Python basics (loops, functions, data structures)
+- Pandas, NumPy, Matplotlib projects
+- End-to-end analytics mini-projects
+
+This file ensures Git tracks this directory even if it's empty.
