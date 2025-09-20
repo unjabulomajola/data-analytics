@@ -1,0 +1,14 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Office temp
+~$*
+*.tmp
+
+# IDE/editor
+.vscode/
+.idea/
+
+# Data cache
+*.bak
