@@ -1,6 +1,6 @@
 # Excel Salary Dashboard
 
-### add image
+![1_final_dashboard.gif](assets/1_final_dashboard.gif)
 
 ## Introduction
 
@@ -34,7 +34,7 @@ The dataset used for this project contains real-world data science job informati
 
 #### 📊 Data Science Job Salaries - Bar Chart
 
-### add image
+![2_data_jobs.png](assets/2_data_jobs.png)
 
 - 🛠️ **Excel Features:** Utilized bar chart feature (with formatted salary values) and optimized layout for clarity.
 - 🎨 **Design Choice:** Horizontal bar chart for visual comparison of median salaries.
@@ -43,7 +43,7 @@ The dataset used for this project contains real-world data science job informati
 
 #### 🗺️ Country Median Salaries - Map Chart
 
-### add image
+![3_map.png](assets/3_map.png)
 
 - 🛠️ **Excel Features:** Utilized Excel's map chart feature to plot median salaries globally.
 - 🎨 **Design Choice:** Color-coded map to visually differentiate salary levels across regions.
@@ -74,11 +74,11 @@ IF(
 
 🍽️ Background Table
 
-### add image
+![4_job_median_salary.png](assets/4_job_median_salary.png)
 
 📉 Dashboard Implementation
 
-### add image
+![5_job_title.png](assets/5_job_title.png)
 
 #### ⏰ Count of Job Schedule Type
 
@@ -91,10 +91,10 @@ IF(
 
 🍽️ Background Table
 
-### add image
+![6_job_type.png](assets/6_job_type.png)  
 📉 Dashboard Implementation:
 
-### add image
+![7_job_type_output.png](assets/7_job_type_output.png)
 
 ### ❎ Data Validation
 
@@ -105,7 +105,7 @@ IF(
     - 🚫 Incorrect or inconsistent entries are prevented
     - 👥 Overall usability of the dashboard is enhanced
 
-### add image
+![8_data validation.gif](assets/8_data_validation.gif)
 
 ## Conclusion
 
