@@ -1,15 +1,14 @@
-# Excel
+# Excel Lab
 
-**Purpose:** Build data analysis and dashboards in Excel.
+A focused shelf of Excel case studies—quick reads with tight dashboards and traceable logic. Each project title is the teaser; the analysis is inside.
 
-## What you'll find
-- `.xlsx` workbooks
-- PivotTables, charts, slicers
-- KPI cards and dashboards
-- PDF/PNG exports (put in `../dashboards`)
+**What you’ll find**
+- Clean, reproducible workbooks and tidy data
+- Minimalist visuals with clear takeaways
+- Role-ready KPIs and defensible methods
 
-## Skills practiced
-- Cleaning data (remove duplicates, split text, trim)
-- Formulas: `SUMIFS`, `XLOOKUP`, `INDEX+MATCH`, `IF`
-- PivotTables & PivotCharts
-- Basic dashboard design
+**How to explore**
+Open any project folder, skim its README, then jump into the workbook (`/excel/*.xlsx`) 
+
+**Scope**
+Excel only. 
