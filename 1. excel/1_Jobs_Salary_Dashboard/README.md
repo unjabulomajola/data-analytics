@@ -6,10 +6,10 @@
 
 This data jobs salary dashboard was created to help job seekers investigate salaries for their desired jobs and ensure they are being adequately compensated. 
 
-The data is from kaggle( [here](https://www.kaggle.com/datasets/lukebarousse/data-analyst-job-postings-google-search/data)) , which provides a foundation in analyzing data using this powerful tool. The data contains detailed information on job titles, salaries, locations, and essential skills that are presented here.
+The data is from kaggle( [here](https://www.kaggle.com/datasets/lukebarousse/data-analyst-job-postings-google-search/data)) . The data contains detailed information on job titles, salaries, locations, and essential skills that are presented here.
 
 ### Dashboard File
-My final dashboard is in (### add dashboard link)
+📊 [My final dashboard ](salary_dashboard_final.xlsx)
 
 ### Excel Skills Used
 
