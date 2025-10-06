@@ -4,9 +4,9 @@
 
 ## Introduction
 
-This data jobs salary dashboard was created to help job seekers investigate salaries for their desired jobs and ensure they are being adequately compensated. 
+This data jobs salary dashboard was created to help job seekers investigate salaries for their desired jobs and ensure they are being adequately compensated for their desired job title, location and skills. It could also be used by Data Analytics recruiters who are trying to better understand what are the current skill trends, salary ranges and other market insights about data roles so they can optimize the recruitment process.
 
-The data is from kaggle( [here](https://www.kaggle.com/datasets/lukebarousse/data-analyst-job-postings-google-search/data)) . The data contains detailed information on job titles, salaries, locations, and essential skills that are presented here.
+The dataset used comes from [kaggle](https://www.kaggle.com/datasets/lukebarousse/data-analyst-job-postings-google-search/data) . The data contains detailed information on job titles, salaries, locations, and essential skills that are presented here.
 
 ### Dashboard File
 📊 [My final dashboard ](salary_dashboard_final.xlsx)
@@ -19,10 +19,14 @@ The following Excel skills were utilized for analysis:
 - **🧮 Formulas and Functions**
 - **❎ Data Validation**
 
-### Data Jobs Dataset
+### 📂 Data Jobs Dataset
 
-The dataset used for this project contains real-world data science job information from 2025. The dataset is available on kaggle( [here](https://www.kaggle.com/datasets/lukebarousse/data-analyst-job-postings-google-search/data)), this analysis is especially relevant to those looking for job opportunities in the data space or looking for opportunities tp upgrading their careers, this dashboard has a versatile wealth of information for people on the job market that could aid them in choosingthe right skills and job title for their desired salary expectations. It includes detailed information on:
 
+The dataset used for this project contains real-world data science job information from 2025, sourced from [kaggle](https://www.kaggle.com/datasets/lukebarousse/data-analyst-job-postings-google-search/data). 
+
+This analysis is especially valuable for individuals exploring career opportunities in the data industry or looking to advance their existing roles. The dashboard offers a wealth of insights that can help job seekers identify which skills, job titles, and regions align best with their salary expectations and career goals.
+The dataset includes detailed information on:
+ 
 - **👨‍💼 Job titles**
 - **💰 Salaries**
 - **📍 Locations**
@@ -107,6 +111,10 @@ IF(
 
 ![8_data validation.gif](assets/8_data_validation.gif)
 
-## Conclusion
+## 🏁 Conclusion
 
-I created this dashboard to showcase insights into salary trends across various data-related job titles. Utilizing data from kaggle( [here](https://www.kaggle.com/datasets/lukebarousse/data-analyst-job-postings-google-search/data)), this dashboard allows users to make informed decisions about their career paths. Exploring the functionalities to understand how location and job type influence salaries. 
+This dashboard provides a clear, data-driven overview of salary trends across the data industry — covering roles such as Data Analyst, Data Engineer, and Data Scientist. I was able to identify how location, role, and skill set directly influence earning potential.
+
+From a stakeholder perspective, this project demonstrates how salary analytics can guide recruitment strategies, talent development, and career planning. For job seekers, it highlights the skills most correlated with higher compensation and offers transparency into global market trends in the data domain.
+
+Overall, this project strengthened my ability to transform raw job market data into actionable insights using Excel.
