@@ -95,7 +95,7 @@ This also signals a healthy entry point for professionals seeking to transition 
 ### 5️⃣ Top Paying Roles
 ![Top Paying Roles](assets/5_top_paying_roles.png)
 
-After cleaning and reformatting the data for clarity, it was found that **Senior Data Scientist**, **Data Engineer**, and **Machine Learning Engineer** consistently rank among the highest-paying positions.
+After cleaning and reformatting the data for clarity, it was found that **Senior Data Scientist**, **Senior Data Engineer**, and **Machine Learning Engineer** consistently rank among the highest-paying positions.
 
 💰 **Business Insight:**  
 These findings reinforce that specialization and advanced technical skills command higher salaries.  
@@ -128,10 +128,3 @@ This project demonstrates how data-driven insights can illuminate key aspects of
 📈 **Recommendations:**
 - **Job Seekers:** Focus on strengthening high-demand, high-value skills like Python, SQL, and cloud tools to improve job prospects and earning potential.  
 - **Recruiters & HR Teams:** Use salary benchmarks and skill trends from this analysis to attract qualified candidates and align compensation with market expectations.
-
----
-
-
-
-📎 **Repository:**  
-[GitHub – Jobs_Salary_Analysis](https://github.com/unjabulomajola/data-analytics/tree/main/1.%20excel/1_Jobs_Salary_Dashboard)
