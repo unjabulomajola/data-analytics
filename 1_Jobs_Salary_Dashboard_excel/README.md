@@ -1,120 +1,65 @@
-# Excel Salary Dashboard
+# Excel Salary Dashboard – Ad-hoc Market Exploration
 
 ![1_final_dashboard.gif](assets/1_final_dashboard.gif)
 
+
 ## Introduction
 
-This data jobs salary dashboard was created to help job seekers investigate salaries for their desired jobs and ensure they are being adequately compensated for their desired job title, location and skills. It could also be used by Data Analytics recruiters who are trying to better understand what are the current skill trends, salary ranges and other market insights about data roles so they can optimize the recruitment process.
+This dashboard was developed to provide an initial exploratory view of global salary trends in data-related careers.  
+The goal was to build an interactive, evidence based summary that helps job seekers, analysts, and recruiters understand compensation dynamics across roles, countries, and job types.
 
-The dataset used comes from [kaggle](https://www.kaggle.com/datasets/lukebarousse/data-analyst-job-postings-google-search/data) . The data contains detailed information on job titles, salaries, locations, and essential skills that are presented here.
+The dataset comes from [here](https://www.kaggle.com/datasets/lukebarousse/data-analyst-job-postings-google-search/data) and spans **January 2023 to June 2025**, containing real-world postings from platforms such as LinkedIn, Indeed, Glassdoor, etc. It contains detailed information on job titles, average salaries, company locations, and the essential skills most in demand across data roles.
 
-### Dashboard File
-📊 [My final dashboard ](salary_dashboard_final.xlsx)
+This first stage focuses on descriptive insights, identifying patterns, outliers, and relationships that would inform deeper analysis in the subsequent EDA and SQL phases.
 
-### Excel Skills Used
+---
 
-The following Excel skills were utilized for analysis:
+## Dashboard Summary 
+The Excel dashboard visualizes the following key aspects:
 
-- **📉 Charts**
-- **🧮 Formulas and Functions**
-- **❎ Data Validation**
+- Median salaries by job title  
+- Salary distribution by country  
+- Breakdown of job schedule types  
+- Interactive filters by job title, region, and contract type  
 
-### 📂 Data Jobs Dataset
+The design process emphasized readability and fast decision-making through well-structured charts, validation rules, and formula-driven automation.
 
+---
 
-The dataset used for this project contains real-world data science job information from 2025, sourced from [kaggle](https://www.kaggle.com/datasets/lukebarousse/data-analyst-job-postings-google-search/data). 
+## Key Visuals and Insights
 
-This analysis is especially valuable for individuals exploring career opportunities in the data industry or looking to advance their existing roles. The dashboard offers a wealth of insights that can help job seekers identify which skills, job titles, and regions align best with their salary expectations and career goals.
-The dataset includes detailed information on:
+### Salary by Job Title
+
+ ![5_job_title.png](assets/5_job_title.png)  
  
-- **👨‍💼 Job titles**
-- **💰 Salaries**
-- **📍 Locations**
-- **🛠️ Skills**
+- Senior and engineering-oriented data roles show the highest pay levels, while entry-level analyst positions sit below the median threshold.  
+- This highlights how technical specialization and experience directly correlate with compensation growth.
 
-## Dashboard Build
+### Country-Level Salary Distribution
 
-### 📉 Charts
+![3_map.png](assets/3_map.png)  
 
-#### 📊 Data Science Job Salaries - Bar Chart
+- The United States and Western Europe consistently report the highest salary averages.  
+- Emerging markets such as South Africa display competitive growth, with increased demand for remote-friendly positions.
 
-![2_data_jobs.png](assets/2_data_jobs.png)
+### Job Schedule Type
 
-- 🛠️ **Excel Features:** Utilized bar chart feature (with formatted salary values) and optimized layout for clarity.
-- 🎨 **Design Choice:** Horizontal bar chart for visual comparison of median salaries.
-- 📉 **Data Organization:** Sorted job titles by descending salary for improved readability.
-- 💡 **Insights Gained:** This enables quick identification of salary trends, noting that Senior roles and Engineers are higher-paying than Analyst roles.
+![7_job_type_output.png](assets/7_job_type_output.png)  
 
-#### 🗺️ Country Median Salaries - Map Chart
+- Full-time roles dominate the postings, but there’s a visible rise in flexible and contract-based data roles, particularly for global remote positions.
 
-![3_map.png](assets/3_map.png)
+---
 
-- 🛠️ **Excel Features:** Utilized Excel's map chart feature to plot median salaries globally.
-- 🎨 **Design Choice:** Color-coded map to visually differentiate salary levels across regions.
-- 📊 **Data Representation:** Plotted median salary for each country with available data.
-- 👁️ **Visual Enhancement:** Improved readability and immediate understanding of geographic salary trends.
-- 💡 **Insights Gained:** Enables quick grasp of global salary disparities and highlights high/low salary regions.
+## Business Relevance
 
-### 🧮 Formulas and Functions
+This dashboard acts as an exploratory tool for multiple audiences:
 
-#### 💰 Median Salary by Job Titles
+- **Job Seekers:** To assess fair market salaries across locations and experience levels.  
+- **Recruiters:** To benchmark compensation and identify competitive hiring regions.  
+- **Analysts:** To build hypotheses for deeper exploration (skills, industries, and demand).  
 
-```
-=MEDIAN(
-IF(
-    (jobs[job_title_short]=A2)*
-    (jobs[job_country]=country)*
-    (ISNUMBER(SEARCH(type,jobs[job_schedule_type])))*
-    (jobs[salary_year_avg]<>0),
-    jobs[salary_year_avg]
-)
-)
-```
+---
 
-- 🔍 **Multi-Criteria Filtering:** Checks job title, country, schedule type, and excludes blank salaries.
-- 📊 **Array Formula:** Utilizes `MEDIAN()` function with nested `IF()` statement to analyze an array.
-- 🎯 **Tailored Insights:** Provides specific salary information for job titles, regions, and schedule types.
-- **🔢 Formula Purpose:** This formula populates the table below, returning the median salary based on job title, country, and type specified.
+## Next Step
 
-🍽️ Background Table
-
-![4_job_median_salary.png](assets/4_job_median_salary.png)
-
-📉 Dashboard Implementation
-
-![5_job_title.png](assets/5_job_title.png)
-
-#### ⏰ Count of Job Schedule Type
-
-```
-=FILTER(J2#,(NOT(ISNUMBER(SEARCH("and",J2#))+ISNUMBER(SEARCH(",",J2#))))*(J2#<>0))
-```
-
-- 🔍 **Unique List Generation:** This Excel formula below employs the `FILTER()` function to exclude entries containing "and" or commas, and omit zero values.
-- **🔢 Formula Purpose:** This formula populates the table below, which gives us a list of unique job schedule types.
-
-🍽️ Background Table
-
-![6_job_type.png](assets/6_job_type.png)  
-📉 Dashboard Implementation:
-
-![7_job_type_output.png](assets/7_job_type_output.png)
-
-### ❎ Data Validation
-
-#### 🔍 Filtered List
-
-- 🔒 **Enhanced Data Validation:** Implementing the filtered list as a data validation rule under the `Job Title`, `Country`, and `Type` option in the Data tab ensures:
-    - 🎯 User input is restricted to predefined, validated schedule types
-    - 🚫 Incorrect or inconsistent entries are prevented
-    - 👥 Overall usability of the dashboard is enhanced
-
-![8_data validation.gif](assets/8_data_validation.gif)
-
-## 🏁 Conclusion
-
-This dashboard provides a clear, data-driven overview of salary trends across the data industry — covering roles such as Data Analyst, Data Engineer, and Data Scientist. I was able to identify how location, role, and skill set directly influence earning potential.
-
-From a stakeholder perspective, this project demonstrates how salary analytics can guide recruitment strategies, talent development, and career planning. For job seekers, it highlights the skills most correlated with higher compensation and offers transparency into global market trends in the data domain.
-
-Overall, this project strengthened my ability to transform raw job market data into actionable insights using Excel.
+Findings from this stage laid the groundwork for the **Exploratory Data Analysis (EDA)** phase, which examined skill demand, salary variability, and job frequency in more detail.
