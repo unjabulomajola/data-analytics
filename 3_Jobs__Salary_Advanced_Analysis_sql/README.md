@@ -1,6 +1,20 @@
 # Introduction
 This project analyses the real-world Data job market using SQL. The objective is to find which skills pay the most, which are most in demand, and which are optimal to learn for a Fully Remote role for a Data Analyst targeting >$100k annual salary. The analysis runs on actual job postings curated by **Luke Barousse** from platforms such as LinkedIn, Glassdoor, Indeed and can be found [here](https://www.kaggle.com/datasets/lukebarousse/data-analyst-job-postings-google-search/data). My aim is providing an evidence-based view of pay and demand. In this analysis, we focus primarily on uncovering insights for individuals interested in becoming a Data Analyst who works remotely and potentially wants to earn a salary above $100k per year.
 
+## Data Model Overview
+
+To support this analysis, I used a relational schema connecting job postings, companies, and associated skills.  
+The diagram below outlines the table relationships used throughout the queries.
+
+![ERD Diagram](assets/erd_jobs_schema.png)
+
+**Schema Summary**
+- `job_postings_fact`: Core dataset containing job-level details such as title, salary, and posting date.  
+- `company_dim`: Dimension table providing company information.  
+- `skills_job_dim`: Bridge table linking jobs to skills.  
+- `skills_dim`: Dimension table listing skill names and categories.
+
+
 ### The questions I wanted to answer through my SQL queries were:
 
 1. What are the top-paying Data Analyst jobs?
@@ -63,7 +77,7 @@ Here's the breakdown of the top data analyst jobs 💼:
 *Bar graph visualizing the salary for the top 10 salaries for data analysts; ChatGPT generated this graph from my SQL query results*
 
 **Business Insights:**  
-- **Wide Salary Range:** he top 10 remote data analyst roles span from $256k to $650k, showing extreme salary variance, likely driven by specialized senior or hybrid roles (e.g., data science–analytics crossover).
+- **Wide Salary Range:** The top 10 remote data analyst roles span from $256k to $650k, showing extreme salary variance, likely driven by specialized senior or hybrid roles (e.g., data science–analytics crossover).
 - **Tech and Media Lead:** Companies like Netflix, Meta, and Mantys dominate top salary listings, confirming that media streaming and big-tech sectors offer premium compensation..
 - **Fully Remote Viability:** Every listing is “Anywhere”, reaffirming that six-figure remote data roles are widely available and globally competitive.
 ---
@@ -118,6 +132,7 @@ Here's the breakdown of the most demanded skills for the top 10 highest paying d
 - **SQL** dominates (appears in 10/10 listings), confirming it as the most critical skill for high-paying roles.  
 - **Python** follows closely, reinforcing its dual use in data manipulation and machine learning.  
 - **Visualization tools** like **Tableau** and **Power BI** are consistently required, highlighting the importance of communication through visuals.
+- It is worth noting **Excel** is still a fundamental tool for Data Analysts overall, especially for junior roles. Since we're interested in "Top Roles" that might be the reason for it's low count.
 
 ---
 
