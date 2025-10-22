@@ -20,7 +20,7 @@ The project unfolds in five analytical stages, each representing a layer of matu
 | `1_jobs_salary_dashboard` | Ad-hoc Exploration | Initial salary dashboard in Excel to identify key metrics such as top-paying roles, average salaries by region, and if salary is affected by top job schedule type. |
 | `2_jobs_salary_eda_excel` | Exploratory Data Analysis (EDA) | Deeper Excel-based investigation into job demand, salary variation, job trends over time and skill frequency across data roles. |
 | `3_jobs_salary_advanced_analysis_sql` | Advanced Market Insights | SQL-driven analytical deep dive identifying high-paying skills, optimal career paths, and remote job trends exclusively for Data Analyst. |
-| `4_jobs_salary_dashboard_powerbi` | Interactive Visualization *(upcoming)* | Interactive Power BI dashboard for dynamic storytelling and executive-ready insights. |
+| `4_jobs_salary_dashboard_powerbi` | Interactive Visualization | Interactive Power BI dashboard for dynamic storytelling and executive-ready insights. |
 | `5_jobs_salary_ai_analysis_chatgptpremium` | AI-Assisted Insights *(upcoming)* | Leveraging AI (ChatGPT Premium) for automated reporting, summary generation, and predictive skill insights. |
 
 Each phase builds upon the previous, demonstrating how a complete analytics workflow progresses from discovery to business recommendation.
